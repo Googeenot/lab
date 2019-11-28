@@ -34,7 +34,8 @@ def elips(x, y, a, b):
     q = []
     n = 50
     for i in range(n):
-        q.append((x + a * math.cos(2 * math.pi * i / n), y + b * math.sin(2 * math.pi * i / n)))
+        q.append((x + a * math.cos(2 * math.pi * i / n),
+                  y + b * math.sin(2 * math.pi * i / n)))
 
     return polygon(q)
 
@@ -43,7 +44,8 @@ def elips2(x, y, a, b):
     q = []
     n = 50
     for i in range(n):
-        q.append((x + a * math.cos(2 * math.pi * i / n), y + b * math.sin(2 * math.pi * i / n)))
+        q.append((x + a * math.cos(2 * math.pi * i / n),
+                  y + b * math.sin(2 * math.pi * i / n)))
 
     polyline(q)
     return polyline(q)
@@ -83,7 +85,8 @@ brushColor(0, 0, 0)
 q = []
 n = 50
 for i in range(n):
-    q.append((345 + 20 * math.cos(2 * math.pi * i / n), 420 + 24 * math.sin(2 * math.pi * i / n)))
+    q.append((345 + 20 * math.cos(2 * math.pi * i / n),
+              420 + 24 * math.sin(2 * math.pi * i / n)))
 
 polygon(q)
 
