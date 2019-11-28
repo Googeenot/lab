@@ -1,4 +1,5 @@
-from random import randrange as rnd, choice
+import autopep8
+print(autopep8.fix_code('''from random import randrange as rnd, choice
 import tkinter as tk
 import math
 import time
@@ -302,4 +303,4 @@ def clear():
 
 new_game()
 
-mainloop()
+mainloop()'''))
